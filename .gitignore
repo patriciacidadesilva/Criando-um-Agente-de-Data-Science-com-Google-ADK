@@ -1,0 +1,60 @@
+# =========================
+# Ambiente virtual (Python)
+# =========================
+.venv/
+venv/
+
+# =========================
+# Variáveis de ambiente / segredos
+# =========================
+.env
+.env.*
+
+# =========================
+# Cache e lixo do Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# =========================
+# Build / distribuição
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Artefatos gerados
+# Ignora tudo, EXCETO imagens (documentação)
+# =========================
+artifacts/*
+!artifacts/*.png
+!artifacts/*.jpg
+!artifacts/*.jpeg
+!artifacts/*.svg
+
+# =========================
+# IDEs e editores
+# =========================
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+
+# =========================
+# Sistema operacional
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Jupyter / notebooks
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Logs
+# =========================
+*.log
