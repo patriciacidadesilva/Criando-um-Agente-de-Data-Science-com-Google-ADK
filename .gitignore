@@ -1,4 +1,16 @@
 # =========================
+# .gitignore
+# =========================
+#
+# Este arquivo:
+# - protege segredos
+# - mantém o repositório limpo
+# - versiona as imagens geradas (PNGs) em artifacts/
+# - ignora todo o resto que não deve ir para o GitHub
+
+
+
+# =========================
 # Ambiente virtual (Python)
 # =========================
 .venv/
