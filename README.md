@@ -13,7 +13,6 @@ O foco principal é mostrar como transformar um modelo de linguagem em um **agen
 > não é um chatbot opinativo,  
 > é um **agente de dados** que pensa, decide e responde **apoiado exclusivamente em ferramentas reais**.
 
-
 ---
 
 ### 0️⃣ Pré-requisitos
@@ -82,7 +81,7 @@ pip install google-adk httpx pandas numpy matplotlib
 * build de dependências
 * resolução de versões
 - Evita falhas silenciosas durante a instalação das bibliotecas
-👉 Sem esse passo, o setup pode quebrar logo no início.
+- 👉 Sem esse passo, o setup pode quebrar logo no início.
 
 
 #### 🧠 3.2 Dependências do projeto (papel de cada uma)
@@ -93,7 +92,7 @@ Responsável por:
 * registro e execução de tools
 * gerenciamento de fluxo de decisão
 * controle de execução e memória
--> Sem o ADK, você teria apenas scripts Python isolados — não um agente.
+- Sem o ADK, você teria apenas scripts Python isolados — não um agente.
 
 
 **httpx — canal de comunicação com o mundo externo**
@@ -102,7 +101,7 @@ Cliente HTTP moderno (sync + async), usado para:
 * busca de dados reais
 * integração com serviços externos
 * Mais robusto que requests.
--> Sem isso, o agente fica cego ao mundo externo.
+- Sem isso, o agente fica cego ao mundo externo.
 
 
 **pandas — camada de negócio dos dados**
@@ -112,7 +111,7 @@ Usada para:
 * limpeza de dados
 * agregações
 * análises exploratórias
--> Sem pandas, você ficaria presa a listas e dicionários (ineficiente e pouco escalável).
+- Sem pandas, você ficaria preso (a) a listas e dicionários (ineficiente e pouco escalável).
 
 
 **numpy — motor matemático**
@@ -121,7 +120,7 @@ Responsável por:
 * operações vetoriais rápidas
 * cálculos estatísticos
 * suporte interno ao pandas
--> Sem numpy, a performance cai ou o código simplesmente quebra.
+- Sem numpy, a performance cai ou o código simplesmente quebra.
 
 
 **matplotlib — visualização e explicabilidade**
@@ -131,10 +130,9 @@ Usada para:
 * validação visual de hipóteses
 * explicabilidade dos resultados
 * storytelling de dados
--> Sem visualização, análise vira número sem contexto.
+- Sem visualização, análise vira número sem contexto.
 
-✅ Após este passo, o projeto deixa de ser apenas setup
-e passa a ser um sistema ativo com capacidades reais.
+✅ Após este passo, o projeto deixa de ser apenas setup e passa a ser um sistema ativo com capacidades reais.
 
 ---
 
@@ -167,7 +165,7 @@ Funções típicas:
 * cálculos
 * validações
 * lógica de negócio
-Mental model: capabilities do agente
+- Mental model: capabilities do agente
 
 
 📁 **agent/ — domínio do agente**
@@ -177,7 +175,7 @@ Responsabilidades:
 * registrar tools
 * definir comportamento e regras
 * servir como ponto de entrada do sistema
-Mental model: control plane
+- Mental model: control plane
 
 
 📄 **tools/__init__.py**
@@ -193,7 +191,7 @@ Responsabilidade única:
 * chamar APIs
 * ler arquivos
 * Dados entram aqui.
-Nenhuma regra de negócio vive nesta camada.
+- Nenhuma regra de negócio vive nesta camada.
 
 
 📄 **tools/analysis.py**
@@ -203,7 +201,7 @@ Responsabilidade única:
 * cálculos
 * regras estatísticas
 * geração de insights
-Aqui os dados viram informação.
+- Aqui os dados viram informação.
 
 
 📄 **tools/pipeline.py**
@@ -211,7 +209,7 @@ Camada de orquestração determinística.
 Responsabilidade:
 * conectar ingestão + análise + visualização
 * gerar um relatório completo e reproduzível
-É o “mini-sistema” que o agente é obrigado a usar.
+- É o “mini-sistema” que o agente é obrigado a usar.
 
 
 📄 **agent/agent.py**
@@ -220,7 +218,7 @@ Responsabilidades:
 * criar o LLM Agent
 * definir instruções e regras
 * registrar tools permitidas
-Se você rodar algo, é daqui que tudo começa.
+- Se você rodar algo, é daqui que tudo começa.
 
 
 📄 **test_tools.py**
@@ -229,7 +227,7 @@ Responsabilidades:
 * testar ingestão e análise sem o agente
 * validar dados e cálculos
 * garantir confiança antes da integração
-Mental model: rede de segurança
+- Mental model: rede de segurança
 
 
 📄 **.env**
@@ -265,7 +263,6 @@ Resultado:
 * mais previsibilidade
 * agentes explicáveis
 * código sustentável e extensível
-
 
 ---
 
@@ -327,7 +324,6 @@ GOOGLE_API_KEY=SUA_CHAVE_AQUI
 
 ---
 
-
 ### 6️⃣ Tools — Camada de Dados (`tools/market_data.py`)
 
 Esta seção implementa a **camada de aquisição de dados** do agente.  
@@ -340,7 +336,6 @@ Aqui vivem exclusivamente funções responsáveis por **buscar dados reais do mu
 ---
 
 #### 📄 Arquivo: `tools/market_data.py`
-
 
 ```python
 """
@@ -483,7 +478,6 @@ Este script implementa uma **pipeline mínima de dados de mercado cripto**, segu
 
 buscar → transformar → estruturar
 
-
 Em termos práticos, ele:
 - Consulta a **API pública do CoinGecko**
 - Baixa **preços históricos** de uma criptomoeda (ex.: Bitcoin)
@@ -509,7 +503,6 @@ Nada mágico. É **ETL limpo, explícito e controlado**.
 A responsabilidade de **analisar, interpretar ou decidir** pertence às próximas camadas (`analysis` e `pipeline`).
 
 ---
-
 
 ### 7️⃣ Tools — Análises + Forecast (`tools/analysis.py`)
 
@@ -539,6 +532,7 @@ Este arquivo contém a **camada de análise** do agente: funções pequenas, tes
 ---
 
 #### 📄 Arquivo: `analysis.py`
+
 ```python
 """
 📌 PARA QUE SERVE ESTE CÓDIGO?
@@ -737,8 +731,7 @@ Este código implementa uma **camada de análise explicável** sobre séries tem
 
 Em termos práticos, ele:
 
-- Calcula **retornos financeiros** a partir de uma sequência de preços,
-  extraindo métricas-chave como:
+- Calcula **retornos financeiros** a partir de uma sequência de preços, extraindo métricas-chave como:
   - média dos retornos
   - volatilidade
   - menor e maior retorno observado
@@ -767,7 +760,6 @@ Nada mágico.
 - servir como baseline confiável para evoluções futuras
 
 ---
-
 
 ### 8️⃣ Tools — Orquestração do Pipeline (`tools/pipeline.py`)
 
@@ -921,7 +913,6 @@ def bitcoin_report(days: int = 7, horizon: int = 3) -> Dict[str, Any]:
 ---
 
 
-
 ### 9️⃣ Teste isolado do pipeline (ANTES do ADK)
 
 Este script executa um **teste isolado** do pipeline, sem ADK, validando:
@@ -935,8 +926,8 @@ Este script executa um **teste isolado** do pipeline, sem ADK, validando:
 
 > 📌 Este teste garante que as tools funcionam antes de conectar o agente (boa prática de governança).
 
-
 #### 📄 Arquivo: `test_tool.py`
+
 ```python
 """
 📌 PARA QUE SERVE ESTE CÓDIGO?
@@ -1044,11 +1035,9 @@ Na raiz do projeto, com a VENV ativa:
 python test_tools.py
 ```
 
-✅ Se o gráfico abrir corretamente:Data Scientist mode: ON 🚀
+✅ Se o gráfico abrir corretamente:Data Scientist (agent) mode: ON 🚀
 
 ---
-
-
 
 ### 🔟 Criar o Agente ADK (`agent/agent.py`)
 
@@ -1219,9 +1208,9 @@ Benefícios deste design:
 - **Auditabilidade:** histórico de chamadas às tools e artefatos persistidos (PNG, JSON) permitem revisão.  
 - **Governança e segurança:** instruções rígidas e lista restrita de tools controlam o comportamento do agente.
 
-Regras práticas (exemplo de guardrails a manter no código/instrução):
+Regras práticas (exemplo de **guardrails** a manter no código/instrução):
 
-- Obligar uso de `bitcoin_report` para responder consultas sobre preços/estatísticas.  
+- Obrigar uso de `bitcoin_report` para responder consultas sobre preços/estatísticas.  
 - Retornar erro ou mensagem clara quando dados insuficientes forem detectados.  
 - Proibir qualquer forma de recomendação financeira nas respostas.  
 - Logar chamadas de tool e seus resultados para auditoria.
@@ -1230,9 +1219,7 @@ Regras práticas (exemplo de guardrails a manter no código/instrução):
 
 ---
 
-
-
-## 1️⃣1️⃣ Subir um servidor local (para visualização dos artefatos)
+## 1️⃣1️⃣ Subir um servidor local (para visualização dos artefatos) - Foto PNG do Gráfico
 
 Algumas etapas do projeto geram **artefatos locais**, como gráficos em PNG.  
 Para visualizá-los diretamente no navegador, é necessário subir um **servidor HTTP local** na raiz do projeto.
@@ -1247,7 +1234,10 @@ No terminal, a partir da raiz do projeto `agent-data-science-adk`:
 cd "C:\Users\patricia\OneDrive\Area_de_Trabalho\Projetos\agent-data-science-adk"
 python -m http.server 9000
 ```
-
+**Observação aqui:** se você já estiver na pasta correta só precisa dar o comando
+```powershell
+python -m http.server 9000
+```
 ---
 
 #### 🌐 11.2 O que esse comando faz:
@@ -1281,7 +1271,6 @@ http://127.0.0.1:9000/artifacts/price_chart_xxxxxxxx.png
 📌 Mental model correto:
 Python gera o artefato → servidor expõe → navegador exibe
 
-
 ---
 
 #### ⚠️ 11.5 Observações importantes
@@ -1293,9 +1282,6 @@ Para produção, usar:
 * dashboards ou frontends próprios
 
 ---
-
-
-
 
 ###  1️⃣2️⃣ Subir o ADK Web (Interface de Execução do Agente)
 
@@ -1336,7 +1322,6 @@ Garante que você está usando o ADK instalado no ambiente virtual, mantendo:
 adk.exe
 ``` 
 É o CLI do Google ADK (Agent Development Kit).
-
 Instrui o ADK a: “Subir a interface Web e o runtime para execução e inspeção dos agentes.”
 
 ---
@@ -1392,8 +1377,6 @@ navegador     → observabilidade do agente
 
 ---
 
-
-
 ### 1️⃣3️⃣ Abrir a UI Web do ADK
 
 Após subir o ADK Web (`.\.venv\Scripts\adk.exe web`), abra no navegador o endereço exibido pelo CLI — normalmente:
@@ -1408,10 +1391,10 @@ http://127.0.0.1:8000
 
 No painel da UI:
 
-1. Clique em **agent**
+**1.** Clique em **agent**
 <img width="1917" height="1032" alt="image" src="https://github.com/user-attachments/assets/ea40fecc-66bd-4e38-87cc-e007225a15e1" />
 
-2. Selecione o DataScientistAgent - **agent**
+**2.** Selecione o DataScientistAgent - **agent**
 <img width="1911" height="1026" alt="image" src="https://github.com/user-attachments/assets/421bcc49-767d-4ef1-8fff-e5a51a794ba8" />
 
 ---
