@@ -1400,18 +1400,19 @@ Após subir o ADK Web (`.\.venv\Scripts\adk.exe web`), abra no navegador o ender
 
 http://127.0.0.1:8000
 
+<img width="1917" height="1005" alt="image" src="https://github.com/user-attachments/assets/629e9b74-dbf6-41ae-89a7-71931408c67a" />
 
-> Dica: clique no link exibido no terminal.  
-> Para **parar** o servidor ADK, volte ao terminal onde rodou o comando e pressione `Ctrl+C`.
+> Dica: clique no link exibido no terminal para **rodar/executar** 
 
-![ADK UI - lista de agentes](./image_1769560784300.png)
+**Observação:** Se você quiser **parar** o servidor ADK, volte ao terminal onde rodou o comando e pressione novamente `Ctrl+C`.
 
 No painel da UI:
 
-1. Clique em **agent**  
-2. Selecione **DataScientistAgent**
+1. Clique em **agent**
+<img width="1917" height="1032" alt="image" src="https://github.com/user-attachments/assets/ea40fecc-66bd-4e38-87cc-e007225a15e1" />
 
-![Selecionar agente DataScientistAgent](./image_1769561053067.png)
+2. Selecione o DataScientistAgent - **agent**
+<img width="1911" height="1026" alt="image" src="https://github.com/user-attachments/assets/421bcc49-767d-4ef1-8fff-e5a51a794ba8" />
 
 ---
 
