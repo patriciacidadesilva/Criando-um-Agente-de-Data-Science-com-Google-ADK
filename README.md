@@ -1401,11 +1401,33 @@ No painel da UI:
 
 #### 13.1 Prompt de teste (forçando as tools)
 
-Use este prompt direto na interface do ADK (ou no campo de interação do agente) para forçar o uso da tool `bitcoin_report`:
-* Busque 5 dias de Bitcoin, gere estatísticas de retorno, outliers IQR, previsão de 3 dias e mostre o gráfico.
+Use este prompt abaixo direto na interface do ADK (ou no campo de interação do agente) para forçar o uso da tool `bitcoin_report`:
+* Busque 7 dias de Bitcoin, gere estatísticas de retorno, outliers IQR, previsão de 3 dias e mostre o gráfico.
 * Com base nos últimos 7 dias, o Bitcoin mostrou mais estabilidade ou volatilidade?
 * Explique o que significa não ter outliers detectados no período analisado.
 * Gere o relatório do Bitcoin com 7 dias e depois com 3 dias e compare a volatilidade.
+
+
+🤖🔍 **Busque 7 dias de Bitcoin, gere estatísticas de retorno, outliers IQR, previsão de 3 dias e mostre o gráfico.**
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/43411cfc-d9ce-436b-ac99-ff5d6648a92e" />
+
+<img width="2000" height="1073" alt="image" src="https://github.com/user-attachments/assets/3fd07bfb-a280-44f9-bca5-ab61a512b3b9" />
+
+<img width="2000" height="1061" alt="image" src="https://github.com/user-attachments/assets/bc8a9e43-0000-47cc-aa08-a47d554c1f7b" />
+
+
+🤖🔍**Com base nos últimos 7 dias, o Bitcoin mostrou mais estabilidade ou volatilidade?**
+<img width="2000" height="1049" alt="image" src="https://github.com/user-attachments/assets/9da62d66-0631-4d5f-bf3b-a47f0b35f715" />
+
+
+🤖🔍**Explique o que significa não ter outliers detectados no período analisado.**
+<img width="2000" height="1057" alt="image" src="https://github.com/user-attachments/assets/440039c7-bf4c-439b-ade6-5016a289ba41" />
+
+🤖🔍**Gere o relatório do Bitcoin com 7 dias e depois com 3 dias e compare a volatilidade.**
+<img width="2000" height="1035" alt="image" src="https://github.com/user-attachments/assets/d0278cc2-c5bb-415e-ba80-9f9db7b7f904" />
+
+🤖🔍**Explique como o retorno e a volatilidade foram calculados nesse relatório**
+<img width="2000" height="1051" alt="image" src="https://github.com/user-attachments/assets/d7c5378e-61be-4975-9ba1-acb01fa10243" />
 
 ---
 
