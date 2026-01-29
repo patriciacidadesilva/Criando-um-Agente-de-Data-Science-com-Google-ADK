@@ -1417,9 +1417,9 @@ Use este prompt abaixo direto na interface do ADK (ou no campo de interação do
 
 🤖🔍 **Busque 7 dias de Bitcoin, gere estatísticas de retorno, outliers IQR, previsão de 3 dias e mostre o gráfico.**
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/43411cfc-d9ce-436b-ac99-ff5d6648a92e" />
-
+<br>
 <img width="2000" height="1073" alt="image" src="https://github.com/user-attachments/assets/3fd07bfb-a280-44f9-bca5-ab61a512b3b9" />
-
+<br>
 <img width="2000" height="1061" alt="image" src="https://github.com/user-attachments/assets/bc8a9e43-0000-47cc-aa08-a47d554c1f7b" />
 <br>
 <br>
@@ -1441,9 +1441,9 @@ Use este prompt abaixo direto na interface do ADK (ou no campo de interação do
 <br>
 🕵️ **Outros Exemplo de Consulta**
 <img width="2000" height="1047" alt="image" src="https://github.com/user-attachments/assets/69268638-dec3-4882-b35b-247090d55c7e" />
-
+<br>
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/1c032c28-5d2a-4e44-8d35-8669a9756e9c" />
-
+<br>
 <img width="2000" height="1065" alt="image" src="https://github.com/user-attachments/assets/77a9e3ed-350f-48ef-94bf-3a7bc3e5d013" />
 
 ---
@@ -1470,31 +1470,32 @@ Visualização do grafo de execução do agente, evidenciando o uso de ferrament
 - `plot_prices`
 
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/939ad0b7-de7f-4afc-a193-f3397993da4b" />
-
+<br>
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/6e239edb-9692-4709-b4a1-6664eae91be3" />
 
 ---
 
-🧠 **Visão Arquitetural**
+🧠 **13.3 Visão Arquitetural**
 Este setup demonstra um **Agentic System** onde:
 - A LLM atua como **orquestrador cognitivo**
 - As tools executam **lógica determinística**
 - O fluxo é **auditável, explicável e reprodutível**
 
 > LLM não “chuta”. Ela decide **quando** e **qual** ferramenta executar.
+
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/388973fa-221d-433d-a66a-f6e343423c1a" />
-
+<br>
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/adc1ae96-b05f-40f8-95f3-c1ebfa6748bc" />
-
+<br>
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/682983c6-1af4-44f9-8d49-ded1ce13b7d1" />
-
+<br>
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/9c4f1483-de4a-43d5-807e-8ae1d0530a05" />
-
+<br>
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/100b3264-fb04-4abb-8ceb-05bb14128473" />
 
 ---
 
-#### 13.2 O que esperar (resultado mínimo)
+#### 13.4 O que esperar (resultado mínimo)
 - Um relatório JSON-like contendo:
   - `coin: "bitcoin"`
   - `days: 15`
@@ -1509,7 +1510,7 @@ Este setup demonstra um **Agentic System** onde:
 
 ---
 
-#### 13.3 Problemas comuns & soluções rápidas
+#### 13.5 Problemas comuns & soluções rápidas
 
 - **Nada acontece / timeout**  
   - Verifique conexão de internet e disponibilidade da API do CoinGecko.  
@@ -1531,7 +1532,7 @@ Este setup demonstra um **Agentic System** onde:
 
 ---
 
-#### 13.4 Boas práticas ao demonstrar
+#### 13.6 Boas práticas ao demonstrar
 
 - Antes de compartilhar resultados, valide o conteúdo do PNG em `artifacts/`.  
 - Capture a timeline das chamadas no ADK UI para auditability.  
