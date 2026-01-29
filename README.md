@@ -1037,6 +1037,13 @@ python test_tools.py
 
 ✅ Se o gráfico abrir corretamente:Data Scientist (agent) mode: ON 🚀
 
+**Testes Executados com Sucesso**
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/92f86e14-afb3-4010-ac29-40f81ebbb1fc" />
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/be694b7c-a645-4a62-b7f2-17827ff29f26" />
+
+
+
 ---
 
 ### 🔟 Criar o Agente ADK (`agent/agent.py`)
@@ -1414,20 +1421,30 @@ Use este prompt abaixo direto na interface do ADK (ou no campo de interação do
 <img width="2000" height="1073" alt="image" src="https://github.com/user-attachments/assets/3fd07bfb-a280-44f9-bca5-ab61a512b3b9" />
 
 <img width="2000" height="1061" alt="image" src="https://github.com/user-attachments/assets/bc8a9e43-0000-47cc-aa08-a47d554c1f7b" />
-
-
+<br>
+<br>
 🤖🔍**Com base nos últimos 7 dias, o Bitcoin mostrou mais estabilidade ou volatilidade?**
 <img width="2000" height="1049" alt="image" src="https://github.com/user-attachments/assets/9da62d66-0631-4d5f-bf3b-a47f0b35f715" />
-
-
+<br>
+<br>
 🤖🔍**Explique o que significa não ter outliers detectados no período analisado.**
 <img width="2000" height="1057" alt="image" src="https://github.com/user-attachments/assets/440039c7-bf4c-439b-ade6-5016a289ba41" />
-
+<br>
+<br>
 🤖🔍**Gere o relatório do Bitcoin com 7 dias e depois com 3 dias e compare a volatilidade.**
 <img width="2000" height="1035" alt="image" src="https://github.com/user-attachments/assets/d0278cc2-c5bb-415e-ba80-9f9db7b7f904" />
-
+<br>
+<br>
 🤖🔍**Explique como o retorno e a volatilidade foram calculados nesse relatório**
 <img width="2000" height="1051" alt="image" src="https://github.com/user-attachments/assets/d7c5378e-61be-4975-9ba1-acb01fa10243" />
+<br>
+<br>
+🕵️ **Outros Exemplo de Consulta**
+<img width="2000" height="1047" alt="image" src="https://github.com/user-attachments/assets/69268638-dec3-4882-b35b-247090d55c7e" />
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/1c032c28-5d2a-4e44-8d35-8669a9756e9c" />
+
+<img width="2000" height="1065" alt="image" src="https://github.com/user-attachments/assets/77a9e3ed-350f-48ef-94bf-3a7bc3e5d013" />
 
 ---
 
