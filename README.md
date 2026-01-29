@@ -1448,6 +1448,52 @@ Use este prompt abaixo direto na interface do ADK (ou no campo de interação do
 
 ---
 
+#### 🖥️ 13.2 Demonstração do Agente em Execução (Google ADK Dev UI)
+
+As imagens abaixo mostram o **Agente de Data Science** rodando no **ADK Web UI**, com execução real de ferramentas (*tool calling*) e rastreabilidade completa do fluxo.
+
+💬 **Interação via Chat**
+O usuário solicita análise de Bitcoin (coleta, estatísticas, outliers, previsão e gráfico) e o agente executa o pipeline de forma determinística.
+
+<img width="2000" height="1049" alt="image" src="https://github.com/user-attachments/assets/043d83db-bb6f-4648-92e7-dfaf03c40161" />
+
+---
+
+🔗 **Orquestração de Ferramentas (Agent Graph)**
+Visualização do grafo de execução do agente, evidenciando o uso de ferramentas especializadas:
+
+- `fetch_crypto_prices`
+- `market_chart_to_series`
+- `summarize_returns`
+- `detect_outliers_iqr`
+- `forecast_naive_last`
+- `plot_prices`
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/939ad0b7-de7f-4afc-a193-f3397993da4b" />
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/6e239edb-9692-4709-b4a1-6664eae91be3" />
+
+---
+
+🧠 **Visão Arquitetural**
+Este setup demonstra um **Agentic System** onde:
+- A LLM atua como **orquestrador cognitivo**
+- As tools executam **lógica determinística**
+- O fluxo é **auditável, explicável e reprodutível**
+
+> LLM não “chuta”. Ela decide **quando** e **qual** ferramenta executar.
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/388973fa-221d-433d-a66a-f6e343423c1a" />
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/adc1ae96-b05f-40f8-95f3-c1ebfa6748bc" />
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/682983c6-1af4-44f9-8d49-ded1ce13b7d1" />
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/9c4f1483-de4a-43d5-807e-8ae1d0530a05" />
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/100b3264-fb04-4abb-8ceb-05bb14128473" />
+
+---
+
 #### 13.2 O que esperar (resultado mínimo)
 - Um relatório JSON-like contendo:
   - `coin: "bitcoin"`
